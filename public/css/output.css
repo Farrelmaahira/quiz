@@ -1262,6 +1262,10 @@ input:checked + .toggle-bg {
   min-height: 100vh;
 }
 
+.min-h-40 {
+  min-height: 10rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1621,6 +1625,21 @@ input:checked + .toggle-bg {
 
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+
+.bg-amber-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 230 138 / var(--tw-bg-opacity, 1));
+}
+
+.bg-amber-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 211 77 / var(--tw-bg-opacity, 1));
 }
 
 .bg-gradient-to-br {
