@@ -1,0 +1,685 @@
+{
+	"quiz": [
+		{
+			"roomCode": "QUIZ123",
+			"title": "General Knowledge Quiz",
+			"image" : "general.jpeg",
+			"questions": [
+				{
+					"questionId": 1,
+					"questionText": "What is the capital of France?",
+					"image" : "general.jpeg",
+					"choices": [
+						{ "choiceId": "A", "text": "Berlin", "correctAnswer": false },
+						{ "choiceId": "B", "text": "Madrid", "correctAnswer": false },
+						{ "choiceId": "C", "text": "Paris", "correctAnswer": true },
+						{ "choiceId": "D", "text": "Rome", "correctAnswer": false }
+					],
+					"correctAnswer": "C",
+					"points": 10,
+					"timer" : 15
+				},
+				{
+					"questionId": 2,
+					"questionText": "Who wrote 'To Kill a Mockingbird'?",
+					"choices": [
+						{ "choiceId": "A", "text": "Harper Lee", "correctAnswer": true },
+						{ "choiceId": "B", "text": "Mark Twain", "correctAnswer": false },
+						{ "choiceId": "C", "text": "Jane Austen", "correctAnswer": false },
+						{ "choiceId": "D", "text": "J.K. Rowling", "correctAnswer": false }
+					],
+					"correctAnswer": "A",
+					"points": 10,
+					"timer" : 15
+				},
+				{
+					"questionId": 3,
+					"questionText": "Which planet is known as the Red Planet?",
+					"choices": [
+						{ "choiceId": "A", "text": "Earth", "correctAnswer": false },
+						{ "choiceId": "B", "text": "Venus", "correctAnswer": false },
+						{ "choiceId": "C", "text": "Mars", "correctAnswer": true },
+						{ "choiceId": "D", "text": "Jupiter", "correctAnswer": false }
+					],
+					"correctAnswer": "C",
+					"points": 10,
+					"timer" : 5
+				},
+				{
+					"questionId": 4,
+					"questionText": "What is the largest mammal in the world?",
+					"choices": [
+						{ "choiceId": "A", "text": "Elephant", "correctAnswer": false },
+						{ "choiceId": "B", "text": "Blue Whale", "correctAnswer": true },
+						{ "choiceId": "C", "text": "Giraffe", "correctAnswer": false },
+						{
+							"choiceId": "D",
+							"text": "Great White Shark",
+							"correctAnswer": false
+						}
+					],
+					"correctAnswer": "B",
+					"points": 10,
+					"timer" : 5
+				},
+				{
+					"questionId": 5,
+					"questionText": "What is the square root of 64?",
+					"choices": [
+						{ "choiceId": "A", "text": "6", "correctAnswer": false },
+						{ "choiceId": "B", "text": "7", "correctAnswer": false },
+						{ "choiceId": "C", "text": "8", "correctAnswer": true },
+						{ "choiceId": "D", "text": "9", "correctAnswer": false }
+					],
+					"correctAnswer": "C",
+					"points": 10,
+					"timer" : 5
+				}
+			]
+		},
+		{
+			"roomCode": "UIAIUIAI",
+			"title": "Soal Multimedia",
+			"image" : "tekmul.jpeg",
+			"questions": [
+				{
+					"questionId": 1,
+					"questionText": "Pengubahan Sinyal Analog menjadi Sinyal Digital(kecuali)?",
+					"choices": [
+						{ "choiceId": "A", "text": "Sampling", "correctAnswer": false },
+						{ "choiceId": "B", "text": "Quantizing", "correctAnswer": false },
+						{ "choiceId": "C", "text": "Coding", "correctAnswer": false },
+						{ "choiceId": "D", "text": "Playback", "correctAnswer": true }
+					],
+					"correctAnswer": "D",
+					"points": 10
+				},
+				{
+					"questionId": 2,
+					"questionText": "Bagaimana menghitung rumus ukuran gambar dalam bitmap?",
+					"choices": [
+						{
+							"choiceId": "A",
+							"text": "Width x Height/Colour depth x 8",
+							"correctAnswer": false
+						},
+						{
+							"choiceId": "B",
+							"text": "Width x Height x Colour depth x 8",
+							"correctAnswer": false
+						},
+						{
+							"choiceId": "C",
+							"text": "Width x Height x Colour depth/8",
+							"correctAnswer": true
+						},
+						{
+							"choiceId": "D",
+							"text": "Width / Height/Colour depth x 8",
+							"correctAnswer": false
+						}
+					],
+					"correctAnswer": "C",
+					"points": 10
+				},
+				{
+					"questionId": 3,
+					"questionText": "Apa saja kelemahan dalam image?(kecuali)",
+					"choices": [
+						{
+							"choiceId": "A",
+							"text": "Bergantung pada resolusi",
+							"correctAnswer": false
+						},
+						{
+							"choiceId": "B",
+							"text": "berefek pada kualitas gamnbar",
+							"correctAnswer": false
+						},
+						{
+							"choiceId": "C",
+							"text": "Size terkadang cukup besar",
+							"correctAnswer": false
+						},
+						{
+							"choiceId": "D",
+							"text": "Informasi yang mudah didapatkan",
+							"correctAnswer": true
+						}
+					],
+					"correctAnswer": "D",
+					"points": 10
+				},
+				{
+					"questionId": 4,
+					"questionText": "Menurut Vaughan, berapa tahap utama yang ada dalam proses pengembangan multimedia?",
+					"choices": [
+						{ "choiceId": "A", "text": "3", "correctAnswer": false },
+						{ "choiceId": "B", "text": "4", "correctAnswer": true },
+						{ "choiceId": "C", "text": "5", "correctAnswer": false },
+						{ "choiceId": "D", "text": "6", "correctAnswer": false }
+					],
+					"correctAnswer": "B",
+					"points": 10
+				},
+				{
+					"questionId": 5,
+					"questionText": "Frekuensi di bawah 20 Hz disebut?",
+					"choices": [
+						{ "choiceId": "A", "text": "Infrasonik", "correctAnswer": true },
+						{ "choiceId": "B", "text": "Subsonic", "correctAnswer": false },
+						{ "choiceId": "C", "text": "Supersonic", "correctAnswer": false },
+						{ "choiceId": "D", "text": "Ultrasonic", "correctAnswer": false }
+					],
+					"correctAnswer": "A",
+					"points": 10
+				},
+				{
+					"questionId": 6,
+					"questionText": "Amplitudo gelombang suara berhubungan langsung dengan?",
+					"choices": [
+						{
+							"choiceId": "A",
+							"text": "Warna suara yang dihasilkan",
+							"correctAnswer": false
+						},
+						{
+							"choiceId": "B",
+							"text": "Frekuensi nada yang dihasilkan",
+							"correctAnswer": false
+						},
+						{
+							"choiceId": "C",
+							"text": "Tingkat kekuatan atau volume suara yang diproduksi",
+							"correctAnswer": true
+						},
+						{ "choiceId": "D", "text": "Durasi Suara", "correctAnswer": false }
+					],
+					"correctAnswer": "C",
+					"points": 10
+				},
+				{
+					"questionId": 7,
+					"questionText": "Dalam konteks audio digital, 'quantization' merujuk pada?",
+					"choices": [
+						{
+							"choiceId": "A",
+							"text": "Proses menetapkan nilai amplitudo tertentu ke setiap sampel",
+							"correctAnswer": true
+						},
+						{
+							"choiceId": "B",
+							"text": "Proses menentukan frekuensi yang tepat untuk rekaman",
+							"correctAnswer": false
+						},
+						{
+							"choiceId": "C",
+							"text": "Proses merekam suara dalam format stereo",
+							"correctAnswer": false
+						},
+						{
+							"choiceId": "D",
+							"text": "Proses menambahkan efek suara pada audio",
+							"correctAnswer": false
+						}
+					],
+					"correctAnswer": "A",
+					"points": 10
+				},
+				{
+					"questionId": 8,
+					"questionText": "Dalam teknik Luther, tahapan yang bertujuan untuk menentukan struktur navigasi dan interaksi pengguna adalah?",
+					"choices": [
+						{ "choiceId": "A", "text": "Perencanaan", "correctAnswer": false },
+						{ "choiceId": "B", "text": "Desain", "correctAnswer": true },
+						{ "choiceId": "C", "text": "Pengembangan", "correctAnswer": false },
+						{ "choiceId": "D", "text": "Pengujian", "correctAnswer": false }
+					],
+					"correctAnswer": "B",
+					"points": 10
+				},
+				{
+					"questionId": 9,
+					"questionText": "Dokumen yang menggambarkan alur cerita dan desain visual dalam pengembangan multimedia disebut?",
+					"image" : "tekmul.jpeg",
+					"choices": [
+						{ "choiceId": "A", "text": "Epic", "correctAnswer": false },
+						{ "choiceId": "B", "text": "Storyboard", "correctAnswer": true },
+						{ "choiceId": "C", "text": "Script", "correctAnswer": false },
+						{
+							"choiceId": "D",
+							"text": "Manual pengguna",
+							"correctAnswer": false
+						}
+					],
+					"correctAnswer": "B",
+					"points": 10
+				},
+				{
+					"questionId": 10,
+					"questionText": "Dalam konteks audio, 'pitch' biasanya ditentukan oleh/",
+					"choices": [
+						{
+							"choiceId": "A",
+							"text": "Amplitudo gelombang suara",
+							"correctAnswer": false
+						},
+						{
+							"choiceId": "B",
+							"text": "Kecepatan gelombang suara",
+							"correctAnswer": false
+						},
+						{ "choiceId": "C", "text": "Durasi Suara", "correctAnswer": false },
+						{
+							"choiceId": "D",
+							"text": "Frekuensi gelombang suara",
+							"correctAnswer": true
+						}
+					],
+					"correctAnswer": "D",
+					"points": 10
+				}
+			]
+		},
+		{
+			"roomCode": "SEPASEP",
+			"title": "Soal Orkom",
+			"image" : "orkom.jpeg",
+			"questions": [
+				{
+					"questionId": 1,
+					"questionText": "Komponen Sistem Operasi untuk sistem I/O yang berfungsi menampung sementara data dari/ke perangkat I/O di sebut?",
+					"choices": [
+						{
+							"choiceId": "A",
+							"text": "Computation speed-up",
+							"correctAnswer": false
+						},
+						{ "choiceId": "B", "text": "Jempering", "correctAnswer": false },
+						{ "choiceId": "C", "text": "Processing", "correctAnswer": false },
+						{ "choiceId": "D", "text": "Buffer", "correctAnswer": true }
+					],
+					"correctAnswer": "D",
+					"points": 10
+				},
+				{
+					"questionId": 2,
+					"questionText": "Jika program telah selesai dieksekusi maka status dari proses tersebut akan berubah menjadi?",
+					"choices": [
+						{ "choiceId": "A", "text": "Waiting", "correctAnswer": false },
+						{ "choiceId": "B", "text": "Ready", "correctAnswer": false },
+						{ "choiceId": "C", "text": "Terminated", "correctAnswer": true },
+						{ "choiceId": "D", "text": "Finishing", "correctAnswer": false }
+					],
+					"correctAnswer": "C",
+					"points": 10
+				},
+				{
+					"questionId": 3,
+					"questionText": "Struktur sebuah sistem komputer dapat dibagi menjadi beberapa bagian di antaranya kecuali?",
+					"choices": [
+						{
+							"choiceId": "A",
+							"text": "Struktur I/O dan Struktur Penyimpanan",
+							"correctAnswer": false
+						},
+						{
+							"choiceId": "B",
+							"text": "Sistem Operasi Komputer",
+							"correctAnswer": false
+						},
+						{
+							"choiceId": "C",
+							"text": "Storage Hierarchy",
+							"correctAnswer": false
+						},
+						{ "choiceId": "D", "text": "Power Supply", "correctAnswer": true }
+					],
+					"correctAnswer": "D",
+					"points": 10
+				},
+				{
+					"questionId": 4,
+					"questionText": "Dibawah ini manakah yang bukan OS?",
+					"choices": [
+						{ "choiceId": "A", "text": "Windows", "correctAnswer": false },
+						{ "choiceId": "B", "text": "Oracle", "correctAnswer": true },
+						{ "choiceId": "C", "text": "Linux", "correctAnswer": false },
+						{ "choiceId": "D", "text": "DOS", "correctAnswer": false }
+					],
+					"correctAnswer": "B",
+					"points": 10
+				},
+				{
+					"questionId": 5,
+					"questionText": "Apa itu booting dalam sistem operasi?",
+					"choices": [
+						{
+							"choiceId": "A",
+							"text": "Restart computer",
+							"correctAnswer": true
+						},
+						{
+							"choiceId": "B",
+							"text": "Mematikan komputer",
+							"correctAnswer": false
+						},
+						{ "choiceId": "C", "text": "Scan", "correctAnswer": false },
+						{ "choiceId": "D", "text": "install", "correctAnswer": false }
+					],
+					"correctAnswer": "A",
+					"points": 10
+				},
+				{
+					"questionId": 6,
+					"questionText": "Yang mana merupakan identitas Linux OS?",
+					"choices": [
+						{
+							"choiceId": "A",
+							"text": "Private operating system",
+							"correctAnswer": false
+						},
+						{
+							"choiceId": "B",
+							"text": "Windows operating system",
+							"correctAnswer": false
+						},
+						{
+							"choiceId": "C",
+							"text": "Open-source operating system",
+							"correctAnswer": true
+						},
+						{
+							"choiceId": "D",
+							"text": "Bukan salah satu diatas",
+							"correctAnswer": false
+						}
+					],
+					"correctAnswer": "C",
+					"points": 10
+				},
+				{
+					"questionId": 7,
+					"questionText": "Yang tidak termasuk generasi dari varian Microsoft Windows adalah?",
+					"choices": [
+						{ "choiceId": "A", "text": "Windows 2004", "correctAnswer": true },
+						{
+							"choiceId": "B",
+							"text": "Windows ME/2000",
+							"correctAnswer": false
+						},
+						{ "choiceId": "C", "text": "Windows 7", "correctAnswer": false },
+						{ "choiceId": "D", "text": "Windows Xp", "correctAnswer": false }
+					],
+					"correctAnswer": "A",
+					"points": 10
+				},
+				{
+					"questionId": 8,
+					"questionText": "Fungsi dari sistem operasi adalah, kecuali..",
+					"choices": [
+						{
+							"choiceId": "A",
+							"text": "Mengatur manajemen file komputer",
+							"correctAnswer": false
+						},
+						{
+							"choiceId": "B",
+							"text": " Mengatur dan memberi perintah kepada brainware",
+							"correctAnswer": true
+						},
+						{
+							"choiceId": "C",
+							"text": "Mengatur operasi perangkat lunak komputer",
+							"correctAnswer": false
+						},
+						{
+							"choiceId": "D",
+							"text": "Mengatur perangkat lunak dengan perangkat keras komputer",
+							"correctAnswer": false
+						}
+					],
+					"correctAnswer": "B",
+					"points": 10
+				},
+				{
+					"questionId": 9,
+					"questionText": "Dibawah ini yang tergolong dalam Distribusi Linux adalah?",
+					"choices": [
+						{
+							"choiceId": "A",
+							"text": "Mandriva, Orange, GNOME dan Ubuntu",
+							"correctAnswer": false
+						},
+						{
+							"choiceId": "B",
+							"text": "Debian, Mandriva, Ubuntu dan knoppix",
+							"correctAnswer": true
+						},
+						{
+							"choiceId": "C",
+							"text": "Ubuntu, Redhat, Fedora dan KDE",
+							"correctAnswer": false
+						},
+						{
+							"choiceId": "D",
+							"text": "Knoppix, Ubuntu, Fedor dan Libonux",
+							"correctAnswer": false
+						}
+					],
+					"correctAnswer": "B",
+					"points": 10
+				},
+				{
+					"questionId": 10,
+					"questionText": " Inti dari Sistem Operasi yang berfungsi sebagai pengelola dari hardware dan manajemen sistem disebut?",
+					"choices": [
+						{ "choiceId": "A", "text": "File Manager", "correctAnswer": false },
+						{ "choiceId": "B", "text": "Boot loader", "correctAnswer": false },
+						{
+							"choiceId": "C",
+							"text": "System Manager",
+							"correctAnswer": false
+						},
+						{ "choiceId": "D", "text": "Kernel", "correctAnswer": true }
+					],
+					"correctAnswer": "D",
+					"points": 10
+				}
+			]
+		},
+		{
+			"roomCode": "PTIK123",
+			"title": "Soal PTIK",
+			"image" : "ptik.jpeg",
+			"questions": [
+				{
+					"questionId": 1,
+					"questionText": "Berikut ini adalah jenis jenis server...(kecuali)",
+					"choices": [
+						{ "choiceId": "A", "text": "Rack Server", "correctAnswer": false },
+						{ "choiceId": "B", "text": "Blade Server", "correctAnswer": false },
+						{ "choiceId": "C", "text": "Tower Server", "correctAnswer": false },
+						{ "choiceId": "D", "text": "Shovel Server", "correctAnswer": true }
+					],
+					"correctAnswer": "D",
+					"points": 10
+				},
+				{
+					"questionId": 2,
+					"questionText": "Firewall adalah perangkat keras dan/atau perangkat lunak yang melindungi sumber daya jaringan dari intrusi",
+					"choices": [
+						{ "choiceId": "A", "text": "True", "correctAnswer": true },
+						{ "choiceId": "B", "text": "False", "correctAnswer": false }
+					],
+					"correctAnswer": "A",
+					"points": 10
+				},
+				{
+					"questionId": 3,
+					"questionText": "Suatu jaringan komputer yang menghubungkan suatu komputer dengan komputer lain dengan jarak yang terbatas disebut dengan?",
+					"choices": [
+						{ "choiceId": "A", "text": "PAN", "correctAnswer": false },
+						{ "choiceId": "B", "text": "WAN", "correctAnswer": false },
+						{ "choiceId": "C", "text": "MAN", "correctAnswer": false },
+						{ "choiceId": "D", "text": "LAN", "correctAnswer": true }
+					],
+					"correctAnswer": "D",
+					"points": 10
+				},
+				{
+					"questionId": 4,
+					"questionText": "Komponen utama yang membangun system units adalah?",
+					"choices": [
+						{
+							"choiceId": "A",
+							"text": "Prosesor dan Memory",
+							"correctAnswer": true
+						},
+						{
+							"choiceId": "B",
+							"text": "Prosesor dan Hardisk",
+							"correctAnswer": false
+						},
+						{
+							"choiceId": "C",
+							"text": "CPU and Hardisk",
+							"correctAnswer": false
+						},
+						{
+							"choiceId": "D",
+							"text": "Motherboard dan CPU",
+							"correctAnswer": false
+						}
+					],
+					"correctAnswer": "A",
+					"points": 10
+				},
+				{
+					"questionId": 5,
+					"questionText": "Dilihat dari segi harga dan ukurannya, jenis komputer berikut ini yang memiliki harga dan ukuran paling besar adalah?",
+					"choices": [
+						{ "choiceId": "A", "text": "Mainframe", "correctAnswer": false },
+						{ "choiceId": "B", "text": "Server", "correctAnswer": false },
+						{
+							"choiceId": "C",
+							"text": "Personal Computer",
+							"correctAnswer": false
+						},
+						{ "choiceId": "D", "text": "Superkomputer", "correctAnswer": true }
+					],
+					"correctAnswer": "D",
+					"points": 10
+				},
+				{
+					"questionId": 6,
+					"questionText": "PDA merupakan salah satu jenis komputer mobile. PDA singkatan dari...",
+					"choices": [
+						{
+							"choiceId": "A",
+							"text": "Personal Data Assistant",
+							"correctAnswer": false
+						},
+						{
+							"choiceId": "B",
+							"text": "Phone and Digital Assistant",
+							"correctAnswer": false
+						},
+						{
+							"choiceId": "C",
+							"text": "Personal Digital Assistant",
+							"correctAnswer": true
+						},
+						{
+							"choiceId": "D",
+							"text": "Phone and Data Assistant",
+							"correctAnswer": false
+						}
+					],
+					"correctAnswer": "C",
+					"points": 10
+				},
+				{
+					"questionId": 7,
+					"questionText": "Cikal bakal internet muncul sekitar tahun 70-an yang ditandai dengan pembentukan badan....",
+					"choices": [
+						{ "choiceId": "A", "text": "ICANN", "correctAnswer": false },
+						{ "choiceId": "B", "text": "Arpanet", "correctAnswer": true },
+						{
+							"choiceId": "C",
+							"text": "World Wide Web Consorsium (W3C)",
+							"correctAnswer": false
+						},
+						{ "choiceId": "D", "text": "ISP", "correctAnswer": false }
+					],
+					"correctAnswer": "B",
+					"points": 10
+				},
+				{
+					"questionId": 8,
+					"questionText": "Politeknik Negeri Jakarta memiliki alamat situs di 'http://www.pnj.ac.id.' Jika dilihat dari alamat situs tersebut, maka yang disebut sebagai top-level domain adalah",
+					"choices": [
+						{ "choiceId": "A", "text": "pnj", "correctAnswer": false },
+						{ "choiceId": "B", "text": "id", "correctAnswer": true },
+						{ "choiceId": "C", "text": "ac", "correctAnswer": false },
+						{ "choiceId": "D", "text": "www", "correctAnswer": false }
+					],
+					"correctAnswer": "B",
+					"points": 10
+				},
+				{
+					"questionId": 9,
+					"questionText": "Alamat IP versi 4 terdiri dari....",
+					"choices": [
+						{
+							"choiceId": "A",
+							"text": "Dua kelompok angka yang dipisahkan oleh koma",
+							"correctAnswer": false
+						},
+						{
+							"choiceId": "B",
+							"text": "Empat kelompok angka yang dipisahkan oleh titik",
+							"correctAnswer": true
+						},
+						{
+							"choiceId": "C",
+							"text": "Empat kelompok angka yang dipisahkan oleh titik dua",
+							"correctAnswer": false
+						},
+						{
+							"choiceId": "D",
+							"text": "Empat kelompok angka yang dipisahkan oleh koma",
+							"correctAnswer": false
+						}
+					],
+					"correctAnswer": "B",
+					"points": 10
+				},
+				{
+					"questionId": 10,
+					"questionText": "Bentuk file pdf biasanya digunakan jika ingin mempublikasikan tulisan secara online. PDF singkatan dari?",
+					"choices": [
+						{
+							"choiceId": "A",
+							"text": "Portable Document Format",
+							"correctAnswer": true
+						},
+						{
+							"choiceId": "B",
+							"text": "Private Document Format",
+							"correctAnswer": false
+						},
+						{
+							"choiceId": "C",
+							"text": "Public Document Format",
+							"correctAnswer": false
+						},
+						{ "choiceId": "D", "text": "Semua salah", "correctAnswer": true }
+					],
+					"correctAnswer": "A",
+					"points": 10
+				}
+			]
+		}
+	]
+}

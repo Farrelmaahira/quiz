@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Quiz</title>
+    <link href="/css/output.css" rel="stylesheet" />
+  </head>
+  <style>
+    .kartu-1 {
+      background-color: transparent;
+      perspective: 1000px;
+    }
+
+    .kartu-isinya {
+      position: relative;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .kartu-1.clicked .kartu-isinya {
+      transform: rotateY(180deg);
+      transition: transform 1s;
+      animation: flip-animation 1s;
+    }
+
+    @keyframes animasi {
+      0% {
+        transform: rotateY(0deg);
+      }
+
+      50% {
+        transform: rotateY(90deg);
+      }
+
+      100% {
+        transform: rotateY(180deg);
+      }
+    }
+
+    .kartu-depanya,
+    .kartu-belakangnya {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+    .kartu-belakangnya {
+      background-color: #1e90ff;
+      color: #fff;
+      transform: rotateY(180deg);
+    }
+  </style>
+
+  <body class="bg-gray-100">
+    <div class="w-full bg-gray-200 h-4 overflow-hidden hidden" id="progress-container">
+      <div
+        id="progress-bar"
+        class="bg-blue-600 h-full transition-all duration-1000 ease-linear hidden"
+        style="width: 0%"
+      ></div>
+    </div>
+
+    <div class="flex items-center justify-center min-h-screen">
+      <div class="container p-3 mx-auto flex flex-col items-center">
+        <% if('image' in question) { %>
+        <img src="images/<%= question.image %>" class="w-1/2 h-96" alt="" />
+        <% } %>
+        <div class="kartu-1 w-1/2 h-96 md:h-1/2" id="quiz-card">
+          <div class="kartu-isinya h-auto md:h-96">
+            <div
+              class="kartu-depanya bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md"
+            >
+              <h1
+                class="text-xl font-bold text-gray-900 dark:text-white text-center"
+              >
+                <%= question.questionText %>
+              </h1>
+              <div id="options" class="grid grid-rows-4 gap-4 my-2">
+                <% question.choices.forEach(function(item,index){ %>
+                <div
+                  class="option-card bg-blue-500 text-white rounded-lg p-4 text-center cursor-pointer hover:bg-blue-400 transition-all"
+                  data-answer="<%= item.choiceId %>"
+                  id="choice"
+                >
+                  <%= item.text %>
+                  <form
+                    action="/submit-answer/<%= code %>/<%= question.questionId %>"
+                    isinya="<%= item.choiceId %>"
+                    method="post"
+                    id="form"
+                    class="form"
+                  >
+                    <input
+                      id="jawabanDipilih"
+                      type="hidden"
+                      name="choices"
+                      value="<%= item.choiceId %>"
+                    />
+                  </form>
+                </div>
+                  <form
+                    action="/submit-answer/<%= code %>/<%= question.questionId %>"
+                    isinya="<%= item.choiceId %>"
+                    method="post"
+                    id="nullForm"
+                    class="form hidden"
+                  >
+                    <input
+                      id="jawabanDipilih"
+                      type="hidden"
+                      name="choices"
+                      value=""
+                    />
+                  </form>
+                <% }) %>
+              </div>
+            </div>
+            <div
+              class="kartu-belakangnya flex items-center justify-center bg-blue-500 dark:bg-gray-700 p-4 rounded-lg shadow-md text-white"
+            >
+              <% const correctChoice=question.choices.find(choice=> choice.correctAnswer)%>
+              <h1 id="cC" class="text-xl font-bold text-center" >
+                Correct Answer : <%= correctChoice.choiceId %>. <%= correctChoice.text %>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+
+    const question = <%- JSON.stringify(question) %>;
+    const options = document.querySelectorAll(".option-card");
+    const quizCard = document.getElementById("quiz-card");
+    const progressBar = document.getElementById("progress-bar");
+    const progressContainer = document.getElementById("progress-container");
+    let timeLeft = question.timer;
+
+    const formSubmit = (form) => {
+      form.submit();
+    }
+
+    if('timer' in question) {
+      progressContainer.classList.remove('hidden');
+      progressBar.classList.remove('hidden');
+      let timeInterval;
+      if(timeLeft !== null) {
+        const form = document.getElementById("nullForm");
+        const totalDuration = timeLeft;
+
+        timeInterval = setInterval(() => {
+          console.log(timeLeft);
+          timeLeft--;
+          
+          const progress = ((totalDuration - timeLeft) / totalDuration) * 100;
+          progressBar.style.width = `${progress}%`;
+
+          if(timeLeft === 0) {
+            clearInterval(timeInterval);
+            quizCard.classList.toggle("clicked");
+            setTimeout(() => {
+              formSubmit(form);
+            }, 3000);
+          }
+        }, 1000);
+
+        if(timeLeft === 0) {
+          console.log('hehe');
+        }
+
+      }
+    }
+
+    options.forEach((option) => {
+      option.addEventListener("click", () => {
+        quizCard.classList.toggle("clicked");
+        setTimeout(() => {
+          const form = option.querySelector(".form");
+          if (form) {
+            formSubmit(form);
+          }
+        }, 3000);
+        const audioV = new Audio("audio/correct-choice-43861.mp3");
+        const audioX = new Audio("audio/error-sound-39539.mp3");
+        const jawabanBenar = question.correctAnswer;
+        const jawabanDipilih = option.querySelector(".form").attributes.isinya.nodeValue;
+        if (jawabanDipilih == jawabanBenar) {
+          audioV.play();
+        } else {
+          audioX.play();
+        }
+      });
+    });
+    </script>
+  </body>
+</html>
